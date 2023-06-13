@@ -21,16 +21,17 @@ export default function Home() {
       animate={{x: 50, opacity: 1}}
       transition={{
         delay: 0.3,
-        duration: 0.85,
+        duration: 1.05,
       }}>
       <div className="left">
         <article className={styles.helloText} ref={ref}>
           {hovering ? 
-          <h1><b>Hi!</b></h1> : <h1>Hello.</h1>
+          <h1><b>Hi<span className={styles.color}>!</span></b></h1> : <h1>Hello<span className={styles.color}>.</span></h1>
           }
         </article>
-        <p>My name is Nelmari Albertse. I’m a photographer and heres is my portfolio. Have a look.</p>
+        <p className={styles.paragraph}>My name is Nelmari Albertse. I’m a developer and here is my NextJS and ReactJS app. Have a look.</p>
       </div>
+      <div className="left-block"></div>
       </motion.div>
 
       <motion.div
