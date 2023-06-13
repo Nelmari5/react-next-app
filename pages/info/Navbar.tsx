@@ -17,12 +17,11 @@ const Navbar = () => {
       role="navigation"
       aria-label="main navigation"
     >
-      <div className="container">
         <div className="navbar-start">
           <ul className={styles.menu}>
 
-            <input type="checkbox" id="checkbox_toggle" />
-            <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label>
+            {/* <input type="checkbox" id="checkbox_toggle" />
+            <label htmlFor="checkbox_toggle" className="hamburger">&#9776;</label> */}
 
               <li>
                 <Link to="/">Home</Link>
@@ -33,20 +32,19 @@ const Navbar = () => {
               <li>
                 <Link to="/topics">Topics</Link>
               </li>
-              <li>
+              {/* <li>
                 <NextLink href="/settings">Settings (SSR)</NextLink>
-              </li>
+              </li> */}
           </ul>
 
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <div className="navbar-item">
               <div className="buttons">
                 <a className="button is-white">Log in</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
-      </div>
     </nav>
     </motion.div>
 
