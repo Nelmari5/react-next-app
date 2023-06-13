@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": false,
+    // "baseUrl": "src/",
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@ali/assets/*": ["src/assets/*"],
+      "@ali/components/*": ["src/components/*"],
+      "@ali/colors/*": ["src/theme/colors"]
+    }
+  },
+  "include": ["next-env.d.ts", 
+  "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/info/Navbar.tsx", "pages/settings.tsx", 
+  "pages/index.js", "pages/_app.js", "types", "src"],
+  "exclude": ["node_modules"]
+}

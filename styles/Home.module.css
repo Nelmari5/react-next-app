@@ -1,0 +1,13 @@
+.background {
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 80px;
+}
+
+.helloText {
+  font-size: 12vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+/* image to be added here */

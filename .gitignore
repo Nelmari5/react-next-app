@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+Steps to follow.
+nvm use 20
+https://www.techiediaries.com/nextjs-13-tutorial/
+https://www.freecodecamp.org/news/react-router-tutorial/
+
+Article:
+https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/
+
+Motion:
+https://www.framer.com/motion/
+
+Walis - Page animation: https://github.com/james-wallis/wallis.dev
+https://wallis.dev/
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
