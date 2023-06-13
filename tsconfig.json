@@ -15,7 +15,6 @@
     "jsx": "preserve",
     "incremental": true,
     "noImplicitAny": false,
-    // "baseUrl": "src/",
     "baseUrl": ".",
     "plugins": [
       {
