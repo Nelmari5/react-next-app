@@ -88,3 +88,24 @@ button:hover {
   background-color: tan;
   transition: 0.3s ease;
 }
+
+@media (max-width: 600px) {
+  .main {
+    height: 100vh;
+    background-color: #fff;
+  }
+  .container {
+    display: block;
+    grid-template-columns: unset;
+    gap: unset;
+  }
+  .left {
+    z-index: 4;
+    position: relative;
+  }
+  .right {
+    padding-top: 70px;
+    z-index: 9;
+    position: relative;
+  }
+}
