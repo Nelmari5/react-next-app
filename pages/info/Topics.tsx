@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react';
+import styles from "../../styles/Topics.module.css"
+import { motion } from "framer-motion";
 import AddPost from '../../components/addPost';
 import Post from '../../components/post';
 import axios from 'axios';
@@ -43,11 +45,11 @@ const addPost = async(title, body) => {
   };
    
   return (
-    <main>
-    <h1>Consuming REST api tutorial</h1>
+    <main className={styles.background}>
+    <h1>Lets add a <span className={styles.color}>NEW</span>post</h1>
+    
       <AddPost addPost={addPost}/>
-      <section className="posts-container">
-      <h2>Posts</h2>
+      <section className='contain'>
         {posts.map((post) => 
           <Post 
             key={post.id} 

@@ -50,7 +50,7 @@ nav {
 }
 
 main {
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #fff;
 }
 
@@ -73,10 +73,18 @@ main {
   z-index: 4;
   position: absolute;
 }
-/* .left-block {
+
+button {
+  color: #fff;
   background-color: #2b2b2b;
-  z-index: 2;
-  height: 70vh;
-  width: 90vh;
-  position: relative;
-} */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: tan;
+  transition: 0.3s ease;
+}

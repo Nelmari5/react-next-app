@@ -13,19 +13,18 @@ export default function AddPost(props) {
     
     return (
         <form onSubmit={handleSubmit}>
-            <h2>Add new Post</h2>
             <div className="input-container">
-                <label htmlFor="title">Title</label>
                 <input 
                     name="title" 
+                    placeholder="What is the heading of your article?" 
                     type="text" 
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                 />
             </div>
             <div className="input-container">
-                <label htmlFor="body">Body</label>
                 <textarea 
+                    placeholder="Type your article" 
                     name="body" 
                     value={body} 
                     onChange={(e) => setBody(e.target.value)}>

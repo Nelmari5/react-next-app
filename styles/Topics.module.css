@@ -1,82 +1,71 @@
 .background {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0070f3;
+  background-color: #EEE;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.color {
+  background-color:tan;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.background h1 {
+  top: 51px;
+  left: 0px;
+  font-size: 100px;
+  z-index: 1;
+  color: #2b2b2b;
 }
 
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
+.background form {
+  position: relative;
+  z-index: 2;
   text-align: center;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+  background-color: #2b2b2b7a;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+  padding: 20px;
+  width: 60%;
+  margin: 50px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.background form input, .background form textarea {
+  padding: 10px;
+  width: 470px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 20px;
 }
 
-.card h3 {
+.postcard {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  float: left;
+  width: 220px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+
+.postcard:hover,
+.postcard:focus,
+.postcard:active {
+  color: tan;
+  border-color: tan;
+}
+
+.postcard h3 {
   margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 
-.card p {
+.postcard p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 

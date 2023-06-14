@@ -24,7 +24,7 @@
 
 /* NAVBAR MENU */
 .menu li:hover {
-  background-color: #4c9e9e;
+  background-color: tan;
   border-radius: 5px;
   transition: 0.3s ease;
 }
