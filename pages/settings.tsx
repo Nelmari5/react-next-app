@@ -3,7 +3,7 @@ import NextLink from 'next/link';
 
 export default function App(props: { message: string }) {
   return (
-    <div>
+    <div className='settings'>
       <p>{props.message}</p>
       <NextLink href="/">Home</NextLink>
     </div>

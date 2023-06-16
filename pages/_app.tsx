@@ -3,6 +3,8 @@ import {useEffect, useState} from 'react';
 import '../styles/globals.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
+import { wrapper } from './info/store/store';
+// import Toast from "react-native-toast-message";
 
 function App({Component, pageProps}: AppProps) {
   const [isServer, setIsServer] = useState(true);
@@ -36,9 +38,11 @@ function App({Component, pageProps}: AppProps) {
       }}
       >
         <Component {...pageProps}/>
+      {/* Your main component */}
+      {/* <Toast /> */}
       </motion.div>
     </AnimatePresence>
   );
 }
 
-export default App;
+export default wrapper.withRedux(App);

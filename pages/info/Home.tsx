@@ -1,21 +1,28 @@
 import React from "react";
 import styles from '../../styles/Home.module.css';
 import { useHover } from '@uidotdev/usehooks';
-
 import Image from 'next/image'
 import { motion } from "framer-motion";
+// import Toast from 'react-native-root-toast';
  
 const imageLoader = ({  }) => {
   return `https://nadesigns.org.za/img/intro-carousel/1.jpg`
 }
 
-export default function Home() {
+export default function Home(this: any) {
   const [ref, hovering] = useHover();
+
+// let toast = Toast.show('Request failed to send.', {
+//   duration: Toast.durations.LONG,
+// });
+
+// setTimeout(function hideToast() {
+//   Toast.hide(toast);
+// }, 500);
 
   return (
     <section className={styles.background}>
       <div className="container">
-
       <motion.div
       initial={{x: 0, opacity: 0}}
       animate={{x: 50, opacity: 1}}
@@ -33,7 +40,7 @@ export default function Home() {
       </div>
       <div className="left-block"></div>
       </motion.div>
-
+      {/* <Toast visible={this.state.visible}>Thanks for subscribing!</Toast> */}
       <motion.div
       initial={{x: 50, opacity: 0}}
       animate={{x: 0, opacity: 1}}

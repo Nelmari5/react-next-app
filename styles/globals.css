@@ -50,7 +50,6 @@ nav {
 }
 
 main {
-  /* height: 100vh; */
   background-color: #fff;
 }
 
@@ -86,6 +85,25 @@ button:hover {
   color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   background-color: tan;
+  transition: 0.3s ease;
+}
+.settings {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+}
+
+.settings a {
+  color: #fff;
+  background-color: tan;
+  padding: 10px 40px;
+  margin-top: 50px;
+  display: inline-block;
+}
+.settings a:hover {
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+  background-color: rgb(167, 132, 88);
   transition: 0.3s ease;
 }
 

@@ -28,7 +28,7 @@ const About = () => (
     
     <div className={styles.container}>
   <div className={styles.box}>
-  <Image
+  <Image data-testid="imageLoad1"
           loader={imageLoader1}
           src="me.png"
           alt="Picture of the author"
@@ -38,7 +38,7 @@ const About = () => (
     <span>Image UNO</span>
   </div>
   <div className={styles.box}>
-  <Image
+  <Image data-testid="imageLoad2"
           loader={imageLoader2}
           src="me.png"
           alt="Picture of the author"
@@ -48,7 +48,7 @@ const About = () => (
     <span>Image DOS</span>
   </div>
   <div className={styles.box}>
-  <Image
+  <Image data-testid="imageLoad3"
           loader={imageLoader3}
           src="me.png"
           alt="Picture of the author"
@@ -58,7 +58,7 @@ const About = () => (
     <span>Image TRES</span>
   </div>
   <div className={styles.box}>
-  <Image
+  <Image data-testid="imageLoad4"
           loader={imageLoader4}
           src="me.png"
           alt="Picture of the author"

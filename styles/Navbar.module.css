@@ -34,3 +34,8 @@
   display: inline-block;
   text-align:center; 
 }
+
+.floatright {
+  float: right;
+  margin: 0 30px;
+}
