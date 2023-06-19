@@ -4,7 +4,7 @@ import '../styles/globals.css';
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from 'next/router';
 import { wrapper } from './info/store/store';
-// import Toast from "react-native-toast-message";
+import { ToastProvider } from "react-toast-notifications";
 
 function App({Component, pageProps}: AppProps) {
   const [isServer, setIsServer] = useState(true);
@@ -16,6 +16,7 @@ function App({Component, pageProps}: AppProps) {
   const router = useRouter();
 
   return (
+    <ToastProvider autoDismiss={true} >
     <AnimatePresence mode="wait">
       <motion.div
       key={router.route}
@@ -38,10 +39,9 @@ function App({Component, pageProps}: AppProps) {
       }}
       >
         <Component {...pageProps}/>
-      {/* Your main component */}
-      {/* <Toast /> */}
       </motion.div>
     </AnimatePresence>
+    </ToastProvider>
   );
 }
 

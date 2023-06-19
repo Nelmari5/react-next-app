@@ -20,10 +20,14 @@ https://wallis.dev/
 REDUX:
 https://blog.logrocket.com/use-redux-next-js/
 
+Toasts:
+https://codesandbox.io/embed/github/doingandlearning/egghead-react-toast-notifications/tree/end-of-lesson-1/?fontsize=14&hidenavigation=1&theme=dark
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+/package-lock.json
 
 # testing
 /coverage

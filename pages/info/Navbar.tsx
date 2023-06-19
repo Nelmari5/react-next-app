@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
     BrowserRouter as Router,
     Routes,
@@ -13,13 +13,20 @@ import { motion } from 'framer-motion';
 
 import { selectAuthState, setAuthState } from './store/slices/authSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { useToasts } from "react-toast-notifications";
 
 const Navbar = () => {
-    const authState = useSelector(selectAuthState);
+    let authState = useSelector(selectAuthState);
     const dispatch = useDispatch();
-
     setAuthState(false);
+    const { addToast } = useToasts();
 
+    useState(() => {
+      if (authState === false){
+        addToast("You are Logged Out!", { appearance: "warning" }) 
+      }
+    });   
+    
     return (
         <motion.div
             initial={{ y: 25, opacity: 0 }}
@@ -27,13 +34,11 @@ const Navbar = () => {
             transition={{
                 delay: 0.1,
                 duration: 0.75,
-            }}
-        >
+            }}>
             <nav
                 className={styles.navbar}
                 role="navigation"
-                aria-label="main navigation"
-            >
+                aria-label="main navigation">
                 <div className="navbar-start">
                     <ul className={styles.menu}>
                         <li>
@@ -51,23 +56,18 @@ const Navbar = () => {
 
                         <div className={styles.floatright}>
                             <button
-                                onClick={() =>
+                                onClick={() =>  
+                                  
                                     authState
                                         ? dispatch(setAuthState(false))
                                         : dispatch(setAuthState(true))
-                                }
-                            >
+                                }>
                                 {authState ? 'Logout' : 'LogIn'}
                             </button>
                         </div>
                     </ul>
                 </div>
-
-                <div className='color'>
-              {authState ? 'Logged in' : 'Not Logged In'}
-            </div>
             </nav>
-
             
         </motion.div>
     );
