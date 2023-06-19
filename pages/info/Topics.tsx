@@ -60,6 +60,7 @@ const addPost = async(title, body) => {
       <section className='contain'>
         {posts.map((post) => 
           <Post 
+            data-testid="result"
             key={post.id} 
             id={post.id}
             title={post.title} 
