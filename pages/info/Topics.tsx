@@ -57,10 +57,9 @@ const addPost = async(title, body) => {
     <h1>Lets add a <span className={styles.color}>NEW</span>post</h1>
     
       <AddPost addPost={addPost}/>
-      <section className='contain'>
+      <section className='contain' >
         {posts.map((post) => 
           <Post 
-            data-testid="result"
             key={post.id} 
             id={post.id}
             title={post.title} 

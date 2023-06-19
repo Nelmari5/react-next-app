@@ -19,7 +19,7 @@ const imageLoader4 = ({}) => {
 const About = () => {
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} data-testid="result">
         <motion.div
             initial={{ y: 25, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

@@ -30,6 +30,6 @@
   },
   "include": ["next-env.d.ts", 
   "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "pages/info/Navbar.tsx", "pages/settings.tsx", 
-  "pages/index.js", "pages/_app.js", "types", "src"],
+  "pages/index.js", "pages/_app.js", "types", "src", "jest.config.js"],
   "exclude": ["node_modules"]
 }
