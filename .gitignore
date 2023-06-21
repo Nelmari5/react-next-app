@@ -5,24 +5,6 @@ nvm use 20
 https://www.techiediaries.com/nextjs-13-tutorial/
 https://www.freecodecamp.org/news/react-router-tutorial/
 
-Style:
-https://store.adveits.com/project/oxer/react-js/demo/
-
-Article:
-https://www.freecodecamp.org/news/how-to-consume-rest-apis-in-react/
-
-Motion:
-https://www.framer.com/motion/
-
-Walis - Page animation: https://github.com/james-wallis/wallis.dev
-https://wallis.dev/
-
-REDUX:
-https://blog.logrocket.com/use-redux-next-js/
-
-Toasts:
-https://codesandbox.io/embed/github/doingandlearning/egghead-react-toast-notifications/tree/end-of-lesson-1/?fontsize=14&hidenavigation=1&theme=dark
-
 # dependencies
 /node_modules
 /.pnp
